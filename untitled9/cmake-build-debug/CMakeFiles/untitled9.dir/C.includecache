@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/angel/CLionProjects/untitled9/CodeCamp.c
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+limits.h
+-
+
