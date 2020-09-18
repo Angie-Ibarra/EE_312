@@ -67,6 +67,9 @@ int main(int argc, char *argv[]) {
 
 
   }
+  for(int i = 0; i < numRows; i++) {
+      free(world[i]);
+  }
   free(world);
   return 0;
 }
