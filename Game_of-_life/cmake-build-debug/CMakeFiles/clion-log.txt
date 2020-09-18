@@ -1,0 +1,4 @@
+C:\Users\angel\AppData\Local\JetBrains\CLion2020.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/angel/CLionProjects/Game_of-_life
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/angel/CLionProjects/Game_of-_life/cmake-build-debug

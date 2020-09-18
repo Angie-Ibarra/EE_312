@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/Game_of__life.dir/life.c.o CMakeFiles/Game_of__life.dir/life_driver.c.o  -o Game_of__life.exe -Wl,--out-implib,libGame_of__life.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

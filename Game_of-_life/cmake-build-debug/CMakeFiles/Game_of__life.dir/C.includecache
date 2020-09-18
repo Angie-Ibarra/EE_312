@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/angel/CLionProjects/Game_of-_life/life.c
+string.h
+-
+stdio.h
+-
+life.h
+/cygdrive/c/Users/angel/CLionProjects/Game_of-_life/life.h
+
+/cygdrive/c/Users/angel/CLionProjects/Game_of-_life/life.h
+
+/cygdrive/c/Users/angel/CLionProjects/Game_of-_life/life_driver.c
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+life.h
+/cygdrive/c/Users/angel/CLionProjects/Game_of-_life/life.h
+
