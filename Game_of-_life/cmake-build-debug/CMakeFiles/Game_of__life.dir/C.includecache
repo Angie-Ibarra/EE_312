@@ -9,6 +9,8 @@
 /cygdrive/c/Users/angel/CLionProjects/Game_of-_life/life.c
 string.h
 -
+stdlib.h
+-
 stdio.h
 -
 life.h

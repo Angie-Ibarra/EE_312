@@ -21,13 +21,15 @@ void populateWorld(char fName[], char *grid[], int *numRows, int *numCols) {
     printf("%d\n", *numCols);
 
     fp = fopen(fName, "r");
-    char str[col+1];
+    char * str = NULL;
     int row = 0;
     do{
         grid[row] = malloc(col);
         fgets(grid[row], col+1, fp);
         row++;
     } while((fgets(str, col+1, fp)) != NULL);
+
+
     *numRows = row;
     fclose(fp);
 }
