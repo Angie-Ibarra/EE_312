@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
       system("clear"); //Linux only
 //      printf("LINUX\n");
 
-      printf("after\n");
+  //    printf("after\n");
 
      iterateGeneration(world, numRows, numCols);
 //     printf("NUM ROOWS %d",numRows);
@@ -70,7 +70,6 @@ int main(int argc, char *argv[]) {
   for(int i = 0; i < numRows; i++) {
       free(world[i]);
   }
-  free(world);
   return 0;
 }
 
