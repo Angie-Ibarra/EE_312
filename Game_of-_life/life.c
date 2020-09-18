@@ -21,7 +21,7 @@ void populateWorld(char fName[], char *grid[], int *numRows, int *numCols) {
     printf("%d\n", *numCols);
 
     fp = fopen(fName, "r");
-    char * str = NULL;
+    char str[col + 1];
     int row = 0;
     do{
         grid[row] = malloc(col);
@@ -29,9 +29,9 @@ void populateWorld(char fName[], char *grid[], int *numRows, int *numCols) {
         row++;
     } while((fgets(str, col+1, fp)) != NULL);
 
-
     *numRows = row;
     fclose(fp);
+    
 }
 
 void showWorld(char *grid[], int numRows, int numCols){
@@ -56,16 +56,16 @@ void iterateGeneration(char *grid[], int numRows, int numCols){
     for(int i = 0; i < numRows; i++){
         for(int j =0; j < numCols; j++){
             int numNeighbors = 0;
-            if(grid[i-1][j] == '*'){
+            if(i > 0 && grid[i-1][j] == '*'){
                 numNeighbors++;
             }
-            if(grid[i][j+1] == '*'){
+            if(j+1 < numCols && grid[i][j+1] == '*'){
                 numNeighbors++;
             }
-            if(grid[i+1][j] == '*'){
+            if(i+1 < numRows && grid[i+1][j] == '*'){
                 numNeighbors++;
             }
-            if(grid[i][j-1] == '*'){
+            if(j > 0 && grid[i][j-1] == '*'){
                 numNeighbors++;
             }
             if(numNeighbors == 1 || numNeighbors < 1){

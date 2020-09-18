@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
    int numRows;
    int numCols;
 
-   populateWorld(fName, world, &numRows, &numCols);
+  populateWorld(fName, world, &numRows, &numCols);
 
    showWorld(world, numRows, numCols);
    for (int iteration = 0; iteration < numGenerations; iteration++) {
@@ -68,8 +68,14 @@ int main(int argc, char *argv[]) {
 
   }
   for(int i = 0; i < numRows; i++) {
-      free(world[i]);
+      //printf("%d fun \n", i);
+	  free(world[i]);
   }
+  
+ // free(fName);
+   // printf("%d NUMMMM ROOOOOWWWWS", numRows);
+   //
+
   return 0;
 }
 
